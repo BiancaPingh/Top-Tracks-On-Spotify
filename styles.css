@@ -1,0 +1,91 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    color: #1DB954;
+  }
+  
+  #tracks, #playlist-preview {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .track-item {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 8px;
+  }
+  
+  .track-item img {
+    width: 48px; 
+    height: 48px;
+    margin-right: 10px; 
+    border-radius: 4px;
+  }
+  
+  .track-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .track-name {
+    font-size: 14px; 
+    font-weight: bold;
+  }
+  
+  .artist-name {
+    font-size: 12px;
+    color: #b3b3b3;
+  }
+  
+  button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #1ed760;
+  }
+  
+  #playlist-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border: 1px solid #1DB954;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  /* Custom scrollbar styles for WebKit browsers */
+  #playlist-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #playlist-container::-webkit-scrollbar-track {
+    background: #121212;
+    border-radius: 8px;
+  }
+  
+  #playlist-container::-webkit-scrollbar-thumb {
+    background-color: #1DB954;
+    border-radius: 8px;
+    border: 2px solid #121212;
+  }
+  
+  /* Custom scrollbar styles for Firefox */
+  #playlist-container {
+    scrollbar-width: thin;
+    scrollbar-color: #1DB954 #121212;
+  }
